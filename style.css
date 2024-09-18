@@ -1,21 +1,120 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-}
-h1 {
     color: #333;
 }
-ul {
+
+/* Container for layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+/* Header styles */
+header {
+    background: #008cba;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 20px 0;
     list-style-type: none;
 }
-ul li {
-    margin: 10px 0;
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
 }
-a {
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background: #005f73;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #94d2bd;
+}
+
+/* Blog list */
+.blog-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.blog-list li {
+    margin-bottom: 15px;
+}
+
+.blog-list li a {
     text-decoration: none;
     color: #008cba;
+    font-size: 1.1em;
+    border-bottom: 1px dashed #008cba;
+    padding-bottom: 3px;
+    transition: all 0.3s;
 }
-a:hover {
-    color: #005f5f;
+
+.blog-list li a:hover {
+    border-color: #005f73;
+    color: #005f73;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Back to Home link */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #008cba;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #005f73;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
